@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rutas",
+  "info": {
+    "name": "Rutas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Codigo": {
+      "type": "string"
+    },
+    "Ruta_Repartidar": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Tiempo": {
+      "type": "string"
+    }
+  }
+}
