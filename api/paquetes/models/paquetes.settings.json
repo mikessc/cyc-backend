@@ -14,9 +14,6 @@
     "Codigo": {
       "type": "string"
     },
-    "Albaran": {
-      "type": "string"
-    },
     "Peso": {
       "type": "string"
     },
@@ -53,15 +50,22 @@
       "type": "string"
     },
     "afiliado": {
-      "via": "paquetes",
-      "model": "afiliados"
-    },
-    "ruta": {
-      "model": "rutas"
+      "model": "afiliados",
+      "via": "paquetes"
     },
     "cliente": {
       "model": "clientes",
       "via": "paquetes"
+    },
+    "Caja": {
+      "type": "string"
+    },
+    "ruta": {
+      "model": "rutas"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

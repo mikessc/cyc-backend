@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/28/2021 8:40:23 PM"
+    "x-generation-date": "02/01/2021 6:52:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4252,9 +4252,6 @@
                 "Codigo": {
                   "type": "string"
                 },
-                "Albaran": {
-                  "type": "string"
-                },
                 "Peso": {
                   "type": "string"
                 },
@@ -4276,10 +4273,16 @@
                 "afiliado": {
                   "type": "string"
                 },
+                "cliente": {
+                  "type": "string"
+                },
+                "Caja": {
+                  "type": "string"
+                },
                 "ruta": {
                   "type": "string"
                 },
-                "cliente": {
+                "users_permissions_user": {
                   "type": "string"
                 },
                 "published_at": {
@@ -4291,6 +4294,46 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "ruta": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Codigo": {
+                "type": "string"
+              },
+              "Tiempo": {
+                "type": "string"
+              },
+              "Provincia": {
+                "type": "string"
+              },
+              "Canton": {
+                "type": "string"
+              },
+              "Distrito": {
+                "type": "string"
+              },
+              "afiliados": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -4349,6 +4392,9 @@
               "type": "string"
             }
           },
+          "ruta": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4388,9 +4434,6 @@
                 "Codigo": {
                   "type": "string"
                 },
-                "Albaran": {
-                  "type": "string"
-                },
                 "Peso": {
                   "type": "string"
                 },
@@ -4412,10 +4455,16 @@
                 "afiliado": {
                   "type": "string"
                 },
+                "cliente": {
+                  "type": "string"
+                },
+                "Caja": {
+                  "type": "string"
+                },
                 "ruta": {
                   "type": "string"
                 },
-                "cliente": {
+                "users_permissions_user": {
                   "type": "string"
                 },
                 "published_at": {
@@ -4471,9 +4520,6 @@
             "type": "string"
           },
           "Codigo": {
-            "type": "string"
-          },
-          "Albaran": {
             "type": "string"
           },
           "Peso": {
@@ -4552,32 +4598,7 @@
                   "type": "string"
                 }
               },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "ruta": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Codigo": {
-                "type": "string"
-              },
-              "Ruta_Repartidar": {
-                "type": "string"
-              },
-              "Tiempo": {
+              "ruta": {
                 "type": "string"
               },
               "published_at": {
@@ -4622,88 +4643,50 @@
               }
             }
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewPaquetes": {
-        "properties": {
-          "Codigo": {
-            "type": "string"
-          },
-          "Albaran": {
-            "type": "string"
-          },
-          "Peso": {
-            "type": "string"
-          },
-          "Estado": {
-            "type": "string",
-            "enum": [
-              "Bodega",
-              "Ruta",
-              "Rural",
-              "Entregado",
-              "Rechazado",
-              "Devolucion",
-              "Recoleccion",
-              "Ausente"
-            ]
-          },
-          "Historial": {
-            "type": "string"
-          },
-          "Detalles": {
-            "type": "string"
-          },
-          "Recibe": {
-            "type": "string",
-            "enum": [
-              "Titular",
-              "Padres",
-              "Hermanos",
-              "Seguridad",
-              "Otro"
-            ]
-          },
-          "Otro": {
-            "type": "string"
-          },
-          "afiliado": {
+          "Caja": {
             "type": "string"
           },
           "ruta": {
-            "type": "string"
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Codigo": {
+                "type": "string"
+              },
+              "Tiempo": {
+                "type": "string"
+              },
+              "Provincia": {
+                "type": "string"
+              },
+              "Canton": {
+                "type": "string"
+              },
+              "Distrito": {
+                "type": "string"
+              },
+              "afiliados": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
-          "cliente": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Rutas": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "Codigo": {
-            "type": "string"
-          },
-          "Ruta_Repartidar": {
+          "users_permissions_user": {
             "required": [
               "id",
               "username",
@@ -4754,8 +4737,159 @@
               }
             }
           },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewPaquetes": {
+        "properties": {
+          "Codigo": {
+            "type": "string"
+          },
+          "Peso": {
+            "type": "string"
+          },
+          "Estado": {
+            "type": "string",
+            "enum": [
+              "Bodega",
+              "Ruta",
+              "Rural",
+              "Entregado",
+              "Rechazado",
+              "Devolucion",
+              "Recoleccion",
+              "Ausente"
+            ]
+          },
+          "Historial": {
+            "type": "string"
+          },
+          "Detalles": {
+            "type": "string"
+          },
+          "Recibe": {
+            "type": "string",
+            "enum": [
+              "Titular",
+              "Padres",
+              "Hermanos",
+              "Seguridad",
+              "Otro"
+            ]
+          },
+          "Otro": {
+            "type": "string"
+          },
+          "afiliado": {
+            "type": "string"
+          },
+          "cliente": {
+            "type": "string"
+          },
+          "Caja": {
+            "type": "string"
+          },
+          "ruta": {
+            "type": "string"
+          },
+          "users_permissions_user": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Rutas": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "Codigo": {
+            "type": "string"
+          },
           "Tiempo": {
             "type": "string"
+          },
+          "Provincia": {
+            "type": "string"
+          },
+          "Canton": {
+            "type": "string"
+          },
+          "Distrito": {
+            "type": "string"
+          },
+          "afiliados": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Nombre": {
+                  "type": "string"
+                },
+                "Codigo": {
+                  "type": "string"
+                },
+                "Email": {
+                  "type": "string"
+                },
+                "Tel": {
+                  "type": "integer"
+                },
+                "Cel": {
+                  "type": "integer"
+                },
+                "Direccion": {
+                  "type": "string"
+                },
+                "Poblacion": {
+                  "type": "string"
+                },
+                "CodPostal": {
+                  "type": "string"
+                },
+                "Ubicacion": {
+                  "type": "component"
+                },
+                "paquetes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ruta": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -4768,11 +4902,23 @@
           "Codigo": {
             "type": "string"
           },
-          "Ruta_Repartidar": {
-            "type": "string"
-          },
           "Tiempo": {
             "type": "string"
+          },
+          "Provincia": {
+            "type": "string"
+          },
+          "Canton": {
+            "type": "string"
+          },
+          "Distrito": {
+            "type": "string"
+          },
+          "afiliados": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

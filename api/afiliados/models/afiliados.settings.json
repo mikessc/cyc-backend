@@ -44,8 +44,12 @@
       "component": "geolocation.ubicacion"
     },
     "paquetes": {
-      "collection": "paquetes",
-      "via": "afiliado"
+      "via": "afiliado",
+      "collection": "paquetes"
+    },
+    "ruta": {
+      "via": "afiliados",
+      "model": "rutas"
     }
   }
 }

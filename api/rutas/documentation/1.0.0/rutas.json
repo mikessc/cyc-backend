@@ -525,59 +525,75 @@
           "Codigo": {
             "type": "string"
           },
-          "Ruta_Repartidar": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "IDR": {
-                "type": "uid"
-              },
-              "Nombre": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "Tiempo": {
             "type": "string"
+          },
+          "Provincia": {
+            "type": "string"
+          },
+          "Canton": {
+            "type": "string"
+          },
+          "Distrito": {
+            "type": "string"
+          },
+          "afiliados": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Nombre": {
+                  "type": "string"
+                },
+                "Codigo": {
+                  "type": "string"
+                },
+                "Email": {
+                  "type": "string"
+                },
+                "Tel": {
+                  "type": "integer"
+                },
+                "Cel": {
+                  "type": "integer"
+                },
+                "Direccion": {
+                  "type": "string"
+                },
+                "Poblacion": {
+                  "type": "string"
+                },
+                "CodPostal": {
+                  "type": "string"
+                },
+                "Ubicacion": {
+                  "type": "component"
+                },
+                "paquetes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ruta": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -590,11 +606,23 @@
           "Codigo": {
             "type": "string"
           },
-          "Ruta_Repartidar": {
-            "type": "string"
-          },
           "Tiempo": {
             "type": "string"
+          },
+          "Provincia": {
+            "type": "string"
+          },
+          "Canton": {
+            "type": "string"
+          },
+          "Distrito": {
+            "type": "string"
+          },
+          "afiliados": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

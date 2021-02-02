@@ -541,9 +541,6 @@
                 "Codigo": {
                   "type": "string"
                 },
-                "Albaran": {
-                  "type": "string"
-                },
                 "Peso": {
                   "type": "string"
                 },
@@ -565,10 +562,16 @@
                 "afiliado": {
                   "type": "string"
                 },
+                "cliente": {
+                  "type": "string"
+                },
+                "Caja": {
+                  "type": "string"
+                },
                 "ruta": {
                   "type": "string"
                 },
-                "cliente": {
+                "users_permissions_user": {
                   "type": "string"
                 },
                 "published_at": {

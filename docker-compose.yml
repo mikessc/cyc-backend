@@ -1,0 +1,28 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - database_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: trackingApp
+    ports:
+      - "3306:3306"
+    networks:
+      - db-net
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - PMA_HOST=db
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+      - UPLOAD_LIMIT=10000000000
+    ports:
+      - "8000:80"
+    networks:
+      - db-net
+volumes:
+  database_data: {}
+networks:
+  db-net: {}

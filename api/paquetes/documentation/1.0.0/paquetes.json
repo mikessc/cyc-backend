@@ -525,9 +525,6 @@
           "Codigo": {
             "type": "string"
           },
-          "Albaran": {
-            "type": "string"
-          },
           "Peso": {
             "type": "string"
           },
@@ -604,32 +601,7 @@
                   "type": "string"
                 }
               },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "ruta": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Codigo": {
-                "type": "string"
-              },
-              "Ruta_Repartidar": {
-                "type": "string"
-              },
-              "Tiempo": {
+              "ruta": {
                 "type": "string"
               },
               "published_at": {
@@ -674,6 +646,100 @@
               }
             }
           },
+          "Caja": {
+            "type": "string"
+          },
+          "ruta": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Codigo": {
+                "type": "string"
+              },
+              "Tiempo": {
+                "type": "string"
+              },
+              "Provincia": {
+                "type": "string"
+              },
+              "Canton": {
+                "type": "string"
+              },
+              "Distrito": {
+                "type": "string"
+              },
+              "afiliados": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "users_permissions_user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "IDR": {
+                "type": "uid"
+              },
+              "Nombre": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -683,9 +749,6 @@
       "NewPaquetes": {
         "properties": {
           "Codigo": {
-            "type": "string"
-          },
-          "Albaran": {
             "type": "string"
           },
           "Peso": {
@@ -726,10 +789,16 @@
           "afiliado": {
             "type": "string"
           },
+          "cliente": {
+            "type": "string"
+          },
+          "Caja": {
+            "type": "string"
+          },
           "ruta": {
             "type": "string"
           },
-          "cliente": {
+          "users_permissions_user": {
             "type": "string"
           },
           "published_at": {
