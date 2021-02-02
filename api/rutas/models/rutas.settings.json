@@ -12,14 +12,24 @@
   },
   "attributes": {
     "Codigo": {
-      "type": "string"
-    },
-    "Ruta_Repartidar": {
-      "plugin": "users-permissions",
-      "model": "user"
+      "type": "string",
+      "unique": true
     },
     "Tiempo": {
       "type": "string"
+    },
+    "Provincia": {
+      "type": "string"
+    },
+    "Canton": {
+      "type": "string"
+    },
+    "Distrito": {
+      "type": "string"
+    },
+    "afiliados": {
+      "collection": "afiliados",
+      "via": "ruta"
     }
   }
 }

@@ -4,15 +4,16 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'bookshelf',
       settings: {
-        client: 'postgres',
-        host: env('DATABASE_HOST', '127.0.0.1'),
-        port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'strapi'),
-        username: env('DATABASE_USERNAME', ''),
-        password: env('DATABASE_PASSWORD', ''),
+        client: 'mysql',
+        host: env('DB_HOST', 'localhost'),
+        port: env('DB_PORT', 3306),
+        database: env('DB_NAME', 'trackingApp'),
+        username: env('DB_USERNAME', 'root'),
+        password: env('DB_PASSWORD', 'root'),
+        timezone: 'America/Costa_Rica'
       },
       options: {
-        ssl: false,
+        useNullAsDefault: true,
       },
     },
   },
