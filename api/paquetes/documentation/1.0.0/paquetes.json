@@ -732,6 +732,9 @@
               "Nombre": {
                 "type": "string"
               },
+              "ruta": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
