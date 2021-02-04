@@ -65,6 +65,9 @@
     },
     "Nombre": {
       "type": "string"
+    },
+    "ruta": {
+      "model": "rutas"
     }
   }
 }

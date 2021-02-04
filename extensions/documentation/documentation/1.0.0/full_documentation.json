@@ -14,7 +14,11 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
+<<<<<<< HEAD
     "x-generation-date": "02/04/2021 1:37:33 AM"
+=======
+    "x-generation-date": "02/03/2021 1:03:52 AM"
+>>>>>>> 8e4a94496df17ef042dbe84216658b2941d579c8
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4729,6 +4733,9 @@
               "Nombre": {
                 "type": "string"
               },
+              "ruta": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -5037,6 +5044,9 @@
                 "Nombre": {
                   "type": "string"
                 },
+                "ruta": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -5155,6 +5165,46 @@
           },
           "Nombre": {
             "type": "string"
+          },
+          "ruta": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Codigo": {
+                "type": "string"
+              },
+              "Tiempo": {
+                "type": "string"
+              },
+              "Provincia": {
+                "type": "string"
+              },
+              "Canton": {
+                "type": "string"
+              },
+              "Distrito": {
+                "type": "string"
+              },
+              "afiliados": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -5201,6 +5251,9 @@
             "type": "uid"
           },
           "Nombre": {
+            "type": "string"
+          },
+          "ruta": {
             "type": "string"
           },
           "created_by": {
