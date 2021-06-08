@@ -604,6 +604,12 @@
               "ruta": {
                 "type": "string"
               },
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -743,6 +749,35 @@
               }
             }
           },
+          "Camp": {
+            "type": "string"
+          },
+          "Recoleccion": {
+            "type": "boolean"
+          },
+          "ID_Recoleccion": {
+            "type": "string"
+          },
+          "Premios": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Cantidad": {
+                  "type": "integer"
+                },
+                "Producto": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -803,6 +838,35 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "Camp": {
+            "type": "string"
+          },
+          "Recoleccion": {
+            "type": "boolean"
+          },
+          "ID_Recoleccion": {
+            "type": "string"
+          },
+          "Premios": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Cantidad": {
+                  "type": "integer"
+                },
+                "Producto": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

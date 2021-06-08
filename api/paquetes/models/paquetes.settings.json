@@ -66,6 +66,20 @@
     "users_permissions_user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "Camp": {
+      "type": "string"
+    },
+    "Recoleccion": {
+      "type": "boolean"
+    },
+    "ID_Recoleccion": {
+      "type": "string"
+    },
+    "Premios": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gifts.premios"
     }
   }
 }

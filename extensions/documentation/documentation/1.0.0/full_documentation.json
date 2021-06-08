@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/04/2021 2:05:53 AM"
+    "x-generation-date": "06/08/2021 1:12:56 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4285,6 +4285,18 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Camp": {
+                  "type": "string"
+                },
+                "Recoleccion": {
+                  "type": "boolean"
+                },
+                "ID_Recoleccion": {
+                  "type": "string"
+                },
+                "Premios": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4336,6 +4348,12 @@
                 "type": "string"
               }
             }
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -4394,6 +4412,12 @@
           },
           "ruta": {
             "type": "string"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -4466,6 +4490,18 @@
                 },
                 "users_permissions_user": {
                   "type": "string"
+                },
+                "Camp": {
+                  "type": "string"
+                },
+                "Recoleccion": {
+                  "type": "boolean"
+                },
+                "ID_Recoleccion": {
+                  "type": "string"
+                },
+                "Premios": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -4600,6 +4636,12 @@
               },
               "ruta": {
                 "type": "string"
+              },
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
               },
               "published_at": {
                 "type": "string"
@@ -4740,6 +4782,35 @@
               }
             }
           },
+          "Camp": {
+            "type": "string"
+          },
+          "Recoleccion": {
+            "type": "boolean"
+          },
+          "ID_Recoleccion": {
+            "type": "string"
+          },
+          "Premios": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Cantidad": {
+                  "type": "integer"
+                },
+                "Producto": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4800,6 +4871,35 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "Camp": {
+            "type": "string"
+          },
+          "Recoleccion": {
+            "type": "boolean"
+          },
+          "ID_Recoleccion": {
+            "type": "string"
+          },
+          "Premios": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Cantidad": {
+                  "type": "integer"
+                },
+                "Producto": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -4881,6 +4981,12 @@
                 },
                 "ruta": {
                   "type": "string"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "lon": {
+                  "type": "number"
                 },
                 "published_at": {
                   "type": "string"

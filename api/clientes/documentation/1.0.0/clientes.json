@@ -574,6 +574,18 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Camp": {
+                  "type": "string"
+                },
+                "Recoleccion": {
+                  "type": "boolean"
+                },
+                "ID_Recoleccion": {
+                  "type": "string"
+                },
+                "Premios": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
