@@ -48,8 +48,14 @@
       "collection": "paquetes"
     },
     "ruta": {
-      "via": "afiliados",
-      "model": "rutas"
+      "model": "rutas",
+      "via": "afiliados"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lon": {
+      "type": "float"
     }
   }
 }
