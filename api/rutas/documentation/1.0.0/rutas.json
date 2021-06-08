@@ -583,6 +583,12 @@
                 "ruta": {
                   "type": "string"
                 },
+                "lat": {
+                  "type": "number"
+                },
+                "lon": {
+                  "type": "number"
+                },
                 "published_at": {
                   "type": "string"
                 },

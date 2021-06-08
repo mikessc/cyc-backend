@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_gifts_premios",
+  "info": {
+    "name": "Premios",
+    "icon": "gift"
+  },
+  "options": {},
+  "attributes": {
+    "Cantidad": {
+      "type": "integer"
+    },
+    "Producto": {
+      "type": "string"
+    }
+  }
+}

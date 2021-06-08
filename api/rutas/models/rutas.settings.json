@@ -28,8 +28,8 @@
       "type": "string"
     },
     "afiliados": {
-      "collection": "afiliados",
-      "via": "ruta"
+      "via": "ruta",
+      "collection": "afiliados"
     }
   }
 }

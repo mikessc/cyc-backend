@@ -609,6 +609,18 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Camp": {
+                  "type": "string"
+                },
+                "Recoleccion": {
+                  "type": "boolean"
+                },
+                "ID_Recoleccion": {
+                  "type": "string"
+                },
+                "Premios": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -660,6 +672,12 @@
                 "type": "string"
               }
             }
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -718,6 +736,12 @@
           },
           "ruta": {
             "type": "string"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
