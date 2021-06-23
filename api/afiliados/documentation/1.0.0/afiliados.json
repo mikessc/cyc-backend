@@ -546,23 +546,6 @@
           "CodPostal": {
             "type": "string"
           },
-          "Ubicacion": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "lat": {
-                "type": "string"
-              },
-              "lon": {
-                "type": "string"
-              }
-            }
-          },
           "paquetes": {
             "type": "array",
             "items": {
@@ -679,6 +662,14 @@
           "lon": {
             "type": "number"
           },
+          "latFija": {
+            "type": "number",
+            "default": 0
+          },
+          "lonFija": {
+            "type": "number",
+            "default": 0
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -711,23 +702,6 @@
           "CodPostal": {
             "type": "string"
           },
-          "Ubicacion": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "lat": {
-                "type": "string"
-              },
-              "lon": {
-                "type": "string"
-              }
-            }
-          },
           "paquetes": {
             "type": "array",
             "items": {
@@ -742,6 +716,14 @@
           },
           "lon": {
             "type": "number"
+          },
+          "latFija": {
+            "type": "number",
+            "default": 0
+          },
+          "lonFija": {
+            "type": "number",
+            "default": 0
           },
           "published_at": {
             "type": "string",

@@ -592,9 +592,6 @@
               "CodPostal": {
                 "type": "string"
               },
-              "Ubicacion": {
-                "type": "component"
-              },
               "paquetes": {
                 "type": "array",
                 "items": {
@@ -608,6 +605,12 @@
                 "type": "number"
               },
               "lon": {
+                "type": "number"
+              },
+              "latFija": {
+                "type": "number"
+              },
+              "lonFija": {
                 "type": "number"
               },
               "published_at": {

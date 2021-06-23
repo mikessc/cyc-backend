@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/rutas": {
+    "/client-requests": {
       "get": {
         "deprecated": false,
-        "description": "Find all the rutas's records",
+        "description": "Find all the client-requests's records",
         "responses": {
           "200": {
-            "description": "Retrieve rutas document(s)",
+            "description": "Retrieve client-requests document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Rutas"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Rutas"
+          "Client-requests"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new rutas record",
+        "description": "Create a new client-requests record",
         "responses": {
           "200": {
-            "description": "Retrieve rutas document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Rutas"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Rutas"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewRutas"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/rutas/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of rutas documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve rutas document(s)",
+            "description": "Retrieve client-requests document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Rutas"
+          "Client-requests"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewClient-requests"
+              }
+            }
+          }
+        }
       }
     },
-    "/rutas/{id}": {
+    "/client-requests/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one rutas record",
+        "description": "Retrieve the numver of client-requests documents",
         "responses": {
           "200": {
-            "description": "Retrieve rutas document(s)",
+            "description": "Retrieve client-requests document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Rutas"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Rutas"
+          "Client-requests"
+        ],
+        "parameters": []
+      }
+    },
+    "/client-requests/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one client-requests record",
+        "responses": {
+          "200": {
+            "description": "Retrieve client-requests document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Client-requests"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single rutas record",
+        "description": "Update a single client-requests record",
         "responses": {
           "200": {
-            "description": "Retrieve rutas document(s)",
+            "description": "Retrieve client-requests document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Rutas"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Rutas"
+          "Client-requests"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRutas"
+                "$ref": "#/components/schemas/NewClient-requests"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single rutas record",
+        "description": "Delete a single client-requests record",
         "responses": {
           "200": {
-            "description": "deletes a single rutas based on the ID supplied",
+            "description": "deletes a single client-requests based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Rutas"
+          "Client-requests"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Rutas": {
+      "Client-requests": {
         "required": [
           "id"
         ],
@@ -522,87 +535,20 @@
           "id": {
             "type": "string"
           },
-          "Codigo": {
+          "NombreCliente": {
             "type": "string"
           },
-          "Tiempo": {
+          "APIURL": {
             "type": "string"
           },
-          "Provincia": {
-            "type": "string"
+          "RequestBody": {
+            "type": "object"
           },
-          "Canton": {
-            "type": "string"
+          "APIResponse": {
+            "type": "object"
           },
-          "Distrito": {
-            "type": "string"
-          },
-          "afiliados": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Nombre": {
-                  "type": "string"
-                },
-                "Codigo": {
-                  "type": "string"
-                },
-                "Email": {
-                  "type": "string"
-                },
-                "Tel": {
-                  "type": "integer"
-                },
-                "Cel": {
-                  "type": "integer"
-                },
-                "Direccion": {
-                  "type": "string"
-                },
-                "Poblacion": {
-                  "type": "string"
-                },
-                "CodPostal": {
-                  "type": "string"
-                },
-                "paquetes": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "ruta": {
-                  "type": "string"
-                },
-                "lat": {
-                  "type": "number"
-                },
-                "lon": {
-                  "type": "number"
-                },
-                "latFija": {
-                  "type": "number"
-                },
-                "lonFija": {
-                  "type": "number"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "APIError": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -610,28 +556,22 @@
           }
         }
       },
-      "NewRutas": {
+      "NewClient-requests": {
         "properties": {
-          "Codigo": {
+          "NombreCliente": {
             "type": "string"
           },
-          "Tiempo": {
+          "APIURL": {
             "type": "string"
           },
-          "Provincia": {
-            "type": "string"
+          "RequestBody": {
+            "type": "object"
           },
-          "Canton": {
-            "type": "string"
+          "APIResponse": {
+            "type": "object"
           },
-          "Distrito": {
-            "type": "string"
-          },
-          "afiliados": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "APIError": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -647,9 +587,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Rutas"
-    }
-  ]
+  "tags": []
 }

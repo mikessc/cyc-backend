@@ -38,14 +38,9 @@
     "CodPostal": {
       "type": "string"
     },
-    "Ubicacion": {
-      "type": "component",
-      "repeatable": false,
-      "component": "geolocation.ubicacion"
-    },
     "paquetes": {
-      "via": "afiliado",
-      "collection": "paquetes"
+      "collection": "paquetes",
+      "via": "afiliado"
     },
     "ruta": {
       "model": "rutas",
@@ -56,6 +51,14 @@
     },
     "lon": {
       "type": "float"
+    },
+    "latFija": {
+      "type": "float",
+      "default": 0
+    },
+    "lonFija": {
+      "type": "float",
+      "default": 0
     }
   }
 }

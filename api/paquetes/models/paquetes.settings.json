@@ -50,8 +50,8 @@
       "type": "string"
     },
     "afiliado": {
-      "model": "afiliados",
-      "via": "paquetes"
+      "via": "paquetes",
+      "model": "afiliados"
     },
     "cliente": {
       "model": "clientes",
