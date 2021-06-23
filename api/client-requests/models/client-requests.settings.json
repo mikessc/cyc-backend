@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_requests",
+  "info": {
+    "name": "ClientRequests",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "NombreCliente": {
+      "type": "string"
+    },
+    "APIURL": {
+      "type": "string"
+    },
+    "RequestBody": {
+      "type": "json"
+    },
+    "APIResponse": {
+      "type": "json"
+    },
+    "APIError": {
+      "type": "json"
+    }
+  }
+}
