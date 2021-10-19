@@ -257,7 +257,7 @@
     "/rutas/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of rutas documents",
+        "description": "Retrieve the number of rutas documents",
         "responses": {
           "200": {
             "description": "Retrieve rutas document(s)",

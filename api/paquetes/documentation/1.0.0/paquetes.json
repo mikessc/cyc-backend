@@ -257,7 +257,7 @@
     "/paquetes/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of paquetes documents",
+        "description": "Retrieve the number of paquetes documents",
         "responses": {
           "200": {
             "description": "Retrieve paquetes document(s)",

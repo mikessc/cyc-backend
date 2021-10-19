@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tiempos",
+  "info": {
+    "name": "Tiempo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Accion": {
+      "type": "enumeration",
+      "enum": [
+        "Entrada",
+        "Salida"
+      ]
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lon": {
+      "type": "string"
+    }
+  }
+}

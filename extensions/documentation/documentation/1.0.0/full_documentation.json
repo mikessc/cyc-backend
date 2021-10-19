@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/23/2021 10:40:36 AM"
+    "x-generation-date": "10/18/2021 5:07:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -37,7 +37,7 @@
   ],
   "externalDocs": {
     "description": "Find out more",
-    "url": "https://strapi.io/documentation/developer-docs/latest/"
+    "url": "https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html"
   },
   "security": [
     {
@@ -302,7 +302,7 @@
     "/afiliados/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of afiliados documents",
+        "description": "Retrieve the number of afiliados documents",
         "responses": {
           "200": {
             "description": "Retrieve afiliados document(s)",
@@ -818,7 +818,7 @@
     "/client-requests/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of client-requests documents",
+        "description": "Retrieve the number of client-requests documents",
         "responses": {
           "200": {
             "description": "Retrieve client-requests document(s)",
@@ -1337,7 +1337,7 @@
     "/clientes/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of clientes documents",
+        "description": "Retrieve the number of clientes documents",
         "responses": {
           "200": {
             "description": "Retrieve clientes document(s)",
@@ -1848,7 +1848,7 @@
     "/paquetes/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of paquetes documents",
+        "description": "Retrieve the number of paquetes documents",
         "responses": {
           "200": {
             "description": "Retrieve paquetes document(s)",
@@ -2359,7 +2359,7 @@
     "/rutas/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of rutas documents",
+        "description": "Retrieve the number of rutas documents",
         "responses": {
           "200": {
             "description": "Retrieve rutas document(s)",
@@ -4763,7 +4763,17 @@
                   "type": "string"
                 },
                 "Estado": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Bodega",
+                    "Ruta",
+                    "Rural",
+                    "Entregado",
+                    "Rechazado",
+                    "Devolucion",
+                    "Recoleccion",
+                    "Ausente"
+                  ]
                 },
                 "Historial": {
                   "type": "string"
@@ -4772,7 +4782,14 @@
                   "type": "string"
                 },
                 "Recibe": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Titular",
+                    "Padres",
+                    "Hermanos",
+                    "Seguridad",
+                    "Otro"
+                  ]
                 },
                 "Otro": {
                   "type": "string"
@@ -5026,7 +5043,17 @@
                   "type": "string"
                 },
                 "Estado": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Bodega",
+                    "Ruta",
+                    "Rural",
+                    "Entregado",
+                    "Rechazado",
+                    "Devolucion",
+                    "Recoleccion",
+                    "Ausente"
+                  ]
                 },
                 "Historial": {
                   "type": "string"
@@ -5035,7 +5062,14 @@
                   "type": "string"
                 },
                 "Recibe": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Titular",
+                    "Padres",
+                    "Hermanos",
+                    "Seguridad",
+                    "Otro"
+                  ]
                 },
                 "Otro": {
                   "type": "string"

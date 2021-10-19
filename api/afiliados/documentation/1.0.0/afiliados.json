@@ -257,7 +257,7 @@
     "/afiliados/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of afiliados documents",
+        "description": "Retrieve the number of afiliados documents",
         "responses": {
           "200": {
             "description": "Retrieve afiliados document(s)",
@@ -563,7 +563,17 @@
                   "type": "string"
                 },
                 "Estado": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Bodega",
+                    "Ruta",
+                    "Rural",
+                    "Entregado",
+                    "Rechazado",
+                    "Devolucion",
+                    "Recoleccion",
+                    "Ausente"
+                  ]
                 },
                 "Historial": {
                   "type": "string"
@@ -572,7 +582,14 @@
                   "type": "string"
                 },
                 "Recibe": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Titular",
+                    "Padres",
+                    "Hermanos",
+                    "Seguridad",
+                    "Otro"
+                  ]
                 },
                 "Otro": {
                   "type": "string"

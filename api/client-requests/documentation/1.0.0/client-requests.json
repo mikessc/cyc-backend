@@ -262,7 +262,7 @@
     "/client-requests/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of client-requests documents",
+        "description": "Retrieve the number of client-requests documents",
         "responses": {
           "200": {
             "description": "Retrieve client-requests document(s)",
