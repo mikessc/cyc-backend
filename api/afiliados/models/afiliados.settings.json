@@ -39,8 +39,8 @@
       "type": "string"
     },
     "paquetes": {
-      "collection": "paquetes",
-      "via": "afiliado"
+      "via": "afiliado",
+      "collection": "paquetes"
     },
     "ruta": {
       "model": "rutas",
