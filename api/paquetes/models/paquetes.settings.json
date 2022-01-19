@@ -50,8 +50,8 @@
       "type": "string"
     },
     "afiliado": {
-      "via": "paquetes",
-      "model": "afiliados"
+      "model": "afiliados",
+      "via": "paquetes"
     },
     "cliente": {
       "model": "clientes",
@@ -80,6 +80,9 @@
       "type": "component",
       "repeatable": true,
       "component": "gifts.premios"
+    },
+    "Zona": {
+      "type": "string"
     }
   }
 }
